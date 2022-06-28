@@ -1,0 +1,32 @@
+
+	Angular Module 8 
+
+- Lect is from Monday to friday 
+- on sat we have doubt solving session 8am to 9.15am
+- Lect duration  8am to 9.15am avg it may b e increase 1.30min or it may decrease 1hr 
+- every day we have doubt solving session 15 min 
+- sunday is holiday
+- Duration 55Hrs 
+- regular batch No any Project 
+- Daily recording on ur whts group that recording is only view 
+- Recording is store on cloud => that recording will present at 4 days
+- all code is given to u except images 
+- no any detection
+- inetrview question will tell into ur topic 
+- don't miss a session 
+- industry standard coding Pattern 
+- 8am u hv connect sharp 8am 
+- Daily practise 1hr 
+- At least Basics of HTML,css u can refer my Youtube /w3school.com
+- U know OOPS concept 
+- Session should be interactive= > two way communication
+- js is not mandatory 
+- Typescript learn for 8 to 9 days 
+- i will teach js in typescript session
+- Angular 8 technology we will learn 
+
+
+
+
+
+
