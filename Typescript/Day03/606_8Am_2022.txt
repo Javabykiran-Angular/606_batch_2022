@@ -1,0 +1,40 @@
+Last Lecture
+1 Difference between Angular js/Javascript Vs Angular 2+/Typescript
+	- It Js based/ It is Typescript based
+	- It is Object based / OOPS lang.
+	- Memory is nit efficient / it is efficient
+	- It is not support Mobile community / it support 
+	- MVC Arch / MVW => 
+2 What is angular
+	- It is front end Technogly 
+	- GUI
+	- angular,react js ....
+	- Angular us fraemwork 
+3 Why Angular
+	- It is framework 
+	- it provides end to end tooling,declared template,Module,services,DI
+	- MVW
+	- one framework to all
+	- universal framework
+	- it is high speed
+	- it code splitting 
+	- It angular cli
+	- equal importance for testing & writing code
+4 SPA
+	-1 head & 1 body 
+	- spa environment=> no extra wait time,no extra reload 
+	- gmail,github,map,ganna.com 
+
+Today's Lecture
+1 What is Typescript
+2 Simple Program of Typescript
+3 vscode overview
+3 Variables
+4 data types
+
+
+
+
+
+
+
