@@ -1,0 +1,71 @@
+Last Lecture
+1 for Loop 
+	for(var i=0;i<5;i++){
+	.....
+	}
+2 var vs let vs const
+	- var has global scope
+	- let has scope within nearest block
+		for(let i=0;i<5;i++){
+		....
+		}
+	- const has global scope as well as local scope
+		
+3 functions 
+	functions add1(){
+	...
+	}
+	functions add2(a:number,b:number){
+		....
+	}
+	
+	functions add3():number{
+		return (4+5)
+	}
+	functions add4(a:number,b:number):number{
+		return (a+b)
+	}
+	
+4 anonymous functions
+	let temp=function (){
+	....
+	}
+	temp();
+	
+	let temp2=function (a:number,b:number):number{
+		return (a+b);
+	}
+	
+	let res=temp2(4,5)
+	
+5 Fat arrow functions
+	let temp3=(a:number,b:number):number =>{
+		return (a+b)
+	}
+	
+	let res=temp3(3,4)
+6 Optional parametr functions
+	function add3(a?:number,b?:number){
+		
+	}
+	add3(2,3)
+7 Default parametr functions
+	function add1(a:number,b:number=5){
+	.....
+	}
+	add1(7,10);
+	
+Today's Lecture
+1 Array Basics
+2 Join method
+3 foreach
+4 Rest Parameter Function
+5 Push & pop Method
+6 slice
+
+
+
+
+
+
+
