@@ -1,0 +1,47 @@
+Last Lecture
+1 Array Basics
+	- it is growable & shrinkable dynamically 
+	- there is no any fixed size
+	- u can store hetrogenous data in array as well 
+	let a=[4,5,6];
+	let a1:number[]=[4,5,6,7];
+	let a2:number[]=[];
+	let a3:any[]=[];
+	let a4=[2.5,'sumit',true];
+	for(let i=0;i<a.length;i++){
+	....	
+	}
+	console.log(a);
+	
+2 Join method
+	console.log(a.join(" # "))
+3 foreach
+	a.forEach((myvalue,i)=>{
+			....
+	})
+	
+4 Rest Parameter Function
+	display(str:string,...item:number[]){
+			....
+	}
+	display(4,55,77)
+5 Push & pop Method
+	- LIFO principal
+	a.push(10,20,55);
+	let res=a.pop();
+6 slice
+	- it copies a section of data & returns a new array 
+	let temp=a.slice(1,5);
+	
+
+Today's Lecture
+1 Splice 
+2 simple Json
+3 Array of Object 
+
+
+
+
+
+
+
