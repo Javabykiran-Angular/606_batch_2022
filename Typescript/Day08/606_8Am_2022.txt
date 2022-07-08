@@ -1,0 +1,85 @@
+Last Lecture
+1 Splice 
+	let a=[44,5,6,7];
+	a.splice(2,0,50)
+	a.splice(2,0,50,100,60)
+	a.splice(1,2)
+	a.splice(1,1,78)
+	a.splice(2,1,12,66)
+2 simple Json
+	let obj={
+		fname:'sumit',
+		lname:'Raokhande',
+		id:9
+	}
+	- 1 dot operator
+	2 Square operator
+		
+		console.log(obj.fname)
+		
+		console.log(obj["fname"])
+		
+3 Array of Object 
+	let arrobj=[
+		{
+			fname:'sumit',
+			lname:'Raokhande',
+			id:9,
+			country:{
+				cid:1,
+				cname:"India"
+			},
+			month:["Jan","feb"],
+			result:[
+				{
+					subj:"m1",
+					marks:45
+				},
+				{
+					subj:"m2",
+					marks:45
+				},
+				{
+					subj:"m3",
+					marks:45
+				}
+			]
+		},
+		{
+			fname:'sumit',
+			lname:'Raokhande',
+			id:9
+		},
+		{
+			fname:'sumit',
+			lname:'Raokhande',
+			id:9
+		}
+	]
+	
+	for(let i=0;i<arrobj.length;i++)
+	{
+		console.log(arrobj[i].fname
+			arrobj[i].country.cname
+			arrobj[i].month
+		)
+		
+		for(let j=0;j<arrobj[i].result.length;j++){
+			console.log(arrobj[i].result[j].subj)
+		}
+	}
+
+Today's Lecture
+1 Class
+2 Object, Property,Methods
+3 Constructor
+4 Access Specifier
+5 Access in same package
+6 Access in different package
+
+
+
+
+
+
+
