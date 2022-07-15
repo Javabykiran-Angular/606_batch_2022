@@ -1,0 +1,17 @@
+.success{
+  color: green;
+}
+.danger{
+  color: red;
+}
+
+.warning{
+  color: orange;
+}
+
+.special{
+  font-family: fantasy;
+  font-style: italic;
+  font-size: 32px;
+  background-color: aquamarine;
+}
