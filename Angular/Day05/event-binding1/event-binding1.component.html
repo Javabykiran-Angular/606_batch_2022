@@ -1,0 +1,16 @@
+<p>event-binding1 works!</p>
+
+<!-- syntax=> (eventName)="EventHandler()/CustomMethod()" -->
+
+<button (click)="onClick()">Click</button> <br><br>
+
+<img src="../../assets/bg.jfif" alt="" (click)="onImage()" > 
+<br><br>
+
+<!-- $event 
+  - It is Special Variable given by Angular 
+  - it gives Current Dom Element Information
+  - it is a json object=> it is a information
+-->
+
+<button (click)="onDollerEvent($event)" value="----Doller Event !!!!!">Doller Event</button>

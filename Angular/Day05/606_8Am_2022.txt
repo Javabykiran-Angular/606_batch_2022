@@ -1,0 +1,76 @@
+Last Lecture
+1 Property Binding
+	- [attribute]="PropertyName"
+	<input placeholder="Enter the name" [value]="name">
+	<img [src]="imgUrl">
+	
+	.ts file
+	name:string='sumit';
+	imgUrl="../../assets/bg.jifif";
+	
+2 String Interpolation Vs Property Binding
+	<div hidden=" {{isHidden}} ">String Interpolation</div>
+	<div [hidden]="isHidden"> Apply Property Binding
+	.ts file
+	isHidden:boolean=false;
+3 Style Binding
+	<h1 [style.color]="mycolor" > Apply Style Binding 
+	<h1 [style.color]="rating<4?'red':'green'">
+	<div [ngStyle]="json">
+	.ts file
+	json={
+		color:'red',
+		fontSize:'32px',
+		'font-style':'italic'
+	}
+4 Class Binding
+	<h1 [class]="myclass">
+	<h1 [class.Success]="rating<4"
+		[class.danger]="rating>4">
+	<div [ngClass]="json">Apply ngClass 
+	
+	.ts file
+	myclass:string='Success';
+	rating:number=2;
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	
+	json={
+		'success':!this.isError,
+		'danger':this.isError,
+		'special':this.isSpecial
+	}
+
+Today's Lecture
+1 Event Binding
+2 click event
+3 $event
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
