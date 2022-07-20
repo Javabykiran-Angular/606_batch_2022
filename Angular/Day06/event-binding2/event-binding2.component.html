@@ -1,0 +1,21 @@
+<p>event-binding2 works!</p>
+
+<!-- template ref variable 
+  - u can access a data as well as as u can manipulate the data/behaviour 
+-->
+<!-- <input #inputname type="text" placeholder="Enter The name "> <br><br>
+<button (click)="onSend(inputname)">Send</button> <br><br>
+
+<input #inputname1 type="text" placeholder="Enter The name "> <br><br>
+<button (click)="onSend1(inputname1.value)">Send</button>
+<hr> -->
+
+<!-- <input type="text" placeholder="Enter the Number1" #num1 ><br><br>
+<input type="text" #num2 placeholder="Enter the Number2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)">Addition</button><br><br>
+<input type="text" placeholder="Result" [value]="result" ><br><br> -->
+
+<!-- <input #myinput type="text" placeholder="Enter the name" (change)="onChange(myinput)" > -->
+
+<input type="text" placeholder="Enter key up event" (keyup)="onkeyUp()"> <br><br>
+<input type="text" placeholder="Enter key down event" (keydown)="onkeyDown()">
