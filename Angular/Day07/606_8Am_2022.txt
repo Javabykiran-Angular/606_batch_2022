@@ -1,0 +1,85 @@
+Last Lecture
+1 Template Ref Variable
+	- To hold a handle  or object of that html element
+	- It can manipulate/Change the behvaiour of that element
+	<input #inputname>
+		button (click)="onClick(inputname)">
+		
+		.ts file
+		onClick(name){
+			console.log(name);
+			console.lof(name.value)
+			name.style.background='gereen'
+		}
+		<input #inputname1>
+		button (click)="onClick1(inputname1.value)">
+		
+2 Real Time example
+	
+		<input #num1>
+		<input #num2>
+		<button (click)="onAddition(num1.value,num2.value)"
+		<input [value]="result">
+	.ts file
+	onAddition(num1,num2){
+		let n1=+num1;
+		let n2=+num2;
+		this.result=n1+n2;
+	}
+3 Change event
+	<input  (chnage)="onChange()">
+	
+	.ts file
+	onChange(){
+	.....
+	}
+4 keyboard event
+	- keyup
+		<input (keyup)="onKeyUp()">
+		
+	- keydown
+	<input (keydown)="onKeyDown()">
+	
+	
+Today's Lecture
+1 EventBinding Without EventHandler
+2 Two way Binding
+	- ngModel
+3 Structural directive
+	- U can manipulate/Change ur Dom Structure
+	1 *ngIf => dynamically condition checking
+	2 *ngFor => dynamically Iteration purpose
+	3 *ngSwitch => a particular condition(multiple)
+	- U can apply any HTML Element but u can use at a time one 
+		
+4 ifDirective
+5 <ng-Template>	
+	- It is component Directive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

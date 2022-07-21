@@ -1,0 +1,21 @@
+<p>event-binding3 works!</p>
+<!-- EventBinding Without EventHandler
+  if u want one line logic implementation then u go for 
+-->
+<button (click)="result=5+5">Addition</button>
+
+<h2>Addition::  {{result}} </h2>
+
+
+<!-- Two way Binding -->
+<!-- ngModel => It is used for Two way binding 
+  - It is a attribute Directive
+  if u want us engModel then u have import a FormsModule=> in app.module.ts file
+  notation => bannana in the box
+    [(ngModel)]="PropertyName"
+  
+-->
+
+<input type="text" [(ngModel)]="name" placeholder="Enter the Name">
+
+<h2> {{name}} </h2>
