@@ -1,0 +1,12 @@
+ul{
+  list-style: none;
+}
+
+th,tr,td{
+  text-align: center;
+}
+
+.highlight{
+  background-color: green;
+  color: white;
+}

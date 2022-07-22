@@ -1,0 +1,71 @@
+Last Lecture
+1 EventBinding Without EventHandler
+	- 
+	.ts file
+	result:number;
+	.html file
+	<button (click)="result=5+5">
+		{{result}}
+2 Two way Binding
+	- ngModel
+	- It is attribute directive
+	- [(ngModel)]="name"
+	.ts file 
+	name:string='';
+	.html 
+	<input [(ngModel)]="name">
+	{{name}}
+	
+	app.module.ts
+	FormsModule
+	
+3 Structural directive
+	- U can manipulate/Change ur Dom Structure
+	1 *ngIf => dynamically condition checking
+	2 *ngFor => dynamically Iteration purpose
+	3 *ngSwitch => a particular condition(multiple)
+	- U can apply any HTML Element but u can use at a time one 
+		
+4 ifDirective
+	<div *ngIf="rating<4;else elsepart" >
+		<h2> Condition is true</h2>
+		
+	<ng-Template #elsepart>
+		<h2> Condition is false 
+5 <ng-Template>	
+	- It is component Directive
+
+	
+Today's Lecture
+1 For Directive
+	- It is structureal directive
+	- If u want display dynamic list of data 
+2 Mouse Event
+	- mouseover
+	- mouseout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
