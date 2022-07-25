@@ -1,0 +1,80 @@
+Last Lecture
+1  For Directive
+	- It is structureal directive
+	- If u want display dynamic list of data 
+	<ul>
+		<li *ngFor="let item of course"> {{item}}</li>
+	<ul>
+	
+	<table >
+		<thead>
+			<th>Sr No </th>
+			<th>name </th>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of arrproduct;index as i"
+				(mouseover)="onMouseOver(item)"
+				(mouseout)="onMouseOut()"
+				[ngClass]="{
+					'highlight':selected==item.name
+				}"
+			>
+				<td>{{i+1}}
+				<td>{{item.name}}
+		</tr>
+	.ts file
+	
+	arrproduct=[
+		{
+			name:"Nokia",
+			price:22000,
+			quantity:1
+		},
+		{
+			name:"Nokia",
+			price:22000,
+			quantity:1
+		}
+	]
+	
+	.ts file 
+	onMouseOver(item){
+		this.selected=item.name;
+	}
+	
+	onMouseOut(){
+		this.selected='';
+	}
+	
+2 Mouse Event
+	- mouseover
+	- mouseout
+	
+Today's Lecture
+1 ngSwitch directive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
