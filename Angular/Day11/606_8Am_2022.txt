@@ -1,0 +1,79 @@
+Last Lecture
+1   Component Interaction
+	- u can send data(number/string/boolean/json/array/arry of object/custom model class) to one component to another componet
+	
+	- parent - child relationship maintain
+	
+	app.component.html
+	<app-employee></app-employee>
+	
+2 @Input()
+	- To send data from Parent to child component
+3 @Output()
+	- To send data from Child to parent component
+	@Input()
+	app.component.html
+	<app-parent>
+	
+	parent.html
+	
+	{{ChildData}}
+	
+	<app-child1 [ParentData]="strdata">
+	
+	<app-child2 (ChildstrEvent)="ChildData=$event">
+	
+	parent.ts
+	strdata:string='Sumit Raokhande';
+	ChildData:string='';
+	
+	child1.ts
+	@Input() ParentData:string='';
+	
+	child1.html
+	{{ParentData}}
+	
+	child2.ts
+	@Output() ChildstrEvent=new EventEmitter();
+	strdata="Sumit";
+	
+	
+	onSend(){
+		this.ChildstrEvent.emit(this.strdata);
+	}
+	
+	child2.html
+	<button (click)="onSend()"> Send
+	
+
+Today's Lecture
+1 Pipe
+	- It transform(represent ur data ) a data without changing its original value 
+2 Inbuild Pipe
+3 chaining of pipe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
