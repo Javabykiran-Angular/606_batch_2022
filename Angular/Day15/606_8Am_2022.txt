@@ -1,0 +1,83 @@
+Last Lecture
+1 Http Protocol
+	protocol=>
+		set of rules 
+ http protocol
+	- it is connectionless/stateless protocol
+	
+2 Http Methods
+	1 get  => to get/fetch data from ur server
+	2 post => to send data from frontend server to backend server
+	3 put  => to update ap particular record 
+	4 delete => to Delete ap particular record 
+	
+3 https://jsonplaceholder.typicode.com/posts
+	- it is fake service 
+		if u want send/update/delete any record that record is not store in database but it gives a response to ur request 
+
+
+		ng g s http 
+		httpservice.ts
+		
+		@Injectable({
+			provideIn:'root'
+		})
+		export class HttpService{
+				
+				url:string="..."
+		
+				constructor(private http:HttpClient){}
+				
+				getPost(){
+					return (this.http.get(this.url));
+				}
+		}
+		
+		app.module.ts
+	import 	{HttpClientModule} from '@angular/common/http'
+	
+	post.ts
+	constructor(private service:HttpService){}
+
+		ngOnInit(){
+			this.GetData()
+		}
+		
+		GetData(){
+			this.service.getPost()
+			.subscribe((response)=>{
+				this.posts=(<any>response);
+			})
+		}
+
+4 What is Observable
+5 subscribe method
+6 @Injectable
+7 HttpClientModule Module
+
+Today's Lecture
+1 Post Method
+2 Put method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
