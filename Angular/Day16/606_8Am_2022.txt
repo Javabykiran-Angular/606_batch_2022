@@ -1,0 +1,98 @@
+Last Lecture
+1 Post Method
+	<label> Title::
+	<input #inputtitle placeholder="Enter the Title>"
+	......
+	
+	<button (click)="onSend(inputtitle.value,inputbody.value)">Send
+	
+	post.ts
+	
+	onSend(mytitle,mybody){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		
+		this.service.postData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	
+	http.service.ts
+		postData(obj){
+			return (this.http.post(this.url,obj));
+		}
+2 Put method
+
+		div [hidden]="isHidden">
+			<label> Title::
+	<input [(ngModel)]="title" placeholder="Enter the Title>"
+	......
+	
+			button (click)="onUpdate()">Update 
+	
+		<td> button (click)="onEdit(item)">Edit
+		
+		post.ts
+		onEdit(item){
+			this.id=item.id;
+			this.title=item.title;
+			....
+			isHidden=false;
+		}
+		
+		onUpdate(){
+			let obj={
+				id:this.id,
+				title:this.title,
+				body:this.body
+			}
+			
+				this.service.Updatedata(obj)
+				.subscribe((response)=>{
+					console.log(response)
+				})
+		}
+		
+		http.service.ts
+			
+			Updatedata(obj){
+				return (this.http.put(`${this.url}/${obj.id}`,obj))
+			}
+
+Today's Lecture
+1 delete
+2 error
+3 Routing
+	- navigation from one component to another component
+4 Steps
+	1 configure route
+	2 use <router-outlet>
+	3 establish the link/navigate between two component
+5 Empty path=> "" => we can set a default component
+6 wild cart operator=>"**"=> the requested path is not available
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
