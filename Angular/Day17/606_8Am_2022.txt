@@ -1,0 +1,72 @@
+Last Lecture
+1 delete
+	post.ts
+		onDelete(id){
+			this.service.deletedata(id)
+			.subsribe((response)=>{
+				console.log(response)
+			},(myerror)=>{
+				alert("Error Occured")
+			})
+		}
+		
+	httpservice.ts
+	deletedata(id){
+		return (this.http.delete(`${this.url}/${id}`))
+	}
+2 error
+3 Routing
+	- navigation from one component to another component
+4 Steps
+	1 configure route
+		[
+			{
+				path:"",component:HomeComoponet
+			},
+			{
+				path:"page1",component:Page1Component
+			},
+			....
+			
+			{
+				path:"**",component:notFoundComponent
+			}
+			
+		]
+	2 use <router-outlet>
+		app.component.html
+		<router-outlet>
+	3 establish the link/navigate between two component
+5 Empty path=> "" => we can set a default component
+6 wild cart operator=>"**"=> the requested path is not available
+	home.html
+	<a routerLink="/page1">Page1 
+	
+	<button routerLink="/Follower">Follower 
+	<img src="..." routerLink="/Home">Home 
+
+Today's Lecture
+1 Send parameter 
+2 send query parameter
+3 dynamic routing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
