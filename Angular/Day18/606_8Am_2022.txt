@@ -1,0 +1,89 @@
+Last Lecture
+1 Send parameter 
+		
+	app-routing.module.ts
+		{
+			path:"page2/:id/:username",component:Page2Componetn
+		}
+	
+	home.ts
+	myid:number=9;
+	home.html
+	<a [routerLink]="['/Page2',myid,username]">Page2 
+	
+	page2.ts
+		constructor(private route:ActivatedRoute){}
+		
+		GetAllDataFromUrl(){
+			this.route.ParamMap
+			.subscrobe((param)=>{
+				this.myid=+param.get("id")
+				this.myusername=param.get("username");
+			})
+		}
+	
+2 send query parameter
+		
+		<a routerLink="/queryparam" [queryParams]="jsonobj">
+		
+		queryparameter.ts
+		constructor(private route:ActivatedRoute){}
+		
+		GetAllDataFromUrl(){
+			this.route.queryParamMap
+			.subscrobe((param)=>{
+			
+			....
+			})
+		}
+		
+3 dynamic routing
+		<button (click)="onPage1()">
+		
+		.ts
+		
+		constructor(private router:Router)
+		onPage1(){
+			this.router.navigate(['/Page2',this.myid,this.myusername])
+		}
+
+		onQueryParam(){
+			this.router.navigate(['/queryparamter'],{
+				queryParams:this.jsonobj
+			})
+		}
+
+Today's Lecture
+1 Overview of Bootstrap
+	- make ur application is attractive
+	- less code to write
+	- make ur application responsive
+	
+2 Integration of Bootstrap
+	2 ways to Integration in ur angular application
+	1 u can use online cdn link 
+	2 u can use offline 
+3 Basic grid system of Bootstrap
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
